@@ -1,0 +1,11 @@
+{
+  "index": {
+    "fields": [
+      "dataType",
+      "updatedAt"
+    ]
+  },
+  "ddoc": "indexSortableDataTypeDoc",
+  "name": "indexSortableDataType",
+  "type": "json"
+}

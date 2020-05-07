@@ -1,0 +1,43 @@
+{
+  "name": "universal",
+  "version": "0.3.1",
+  "description": "EBaaS Universal Chaincode",
+  "main": "index.js",
+  "repository": "NONE",
+  "author": "NONE",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "fabric-chaincode-node start",
+    "test": "jest --coverage",
+    "lint": "eslint --fix --ignore-pattern node_modules --ignore-pattern *.test.js -c .eslintrc.js src",
+    "build": "gulp"
+  },
+  "dependencies": {
+    "@ampretia/x509": "^0.4.7",
+    "fabric-contract-api": "^1.4.4",
+    "fabric-shim": "^1.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "eslint": "^6.7.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "jest": {
+    "verbose": true,
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
+  },
+  "engines": {
+    "node": "^8.9.0"
+  }
+}

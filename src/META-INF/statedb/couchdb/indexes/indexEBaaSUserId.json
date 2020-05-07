@@ -1,0 +1,10 @@
+{
+  "index": {
+    "fields": [
+      "ebaasUserId"
+    ]
+  },
+  "ddoc": "indexEBaaSUserIdDoc",
+  "name": "indexEBaaSUserId",
+  "type": "json"
+}

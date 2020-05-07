@@ -1,0 +1,16 @@
+export const ContractHelper = jest.fn().mockImplementation(() => ({
+  constructStateFromString: jest.fn().mockReturnValue({}),
+  constructStatesFromString: jest.fn().mockReturnValue({}),
+  convertBytesToState: jest.fn().mockReturnValue({}),
+  addOneState: jest.fn().mockReturnValue(''),
+  addMultiState: jest.fn().mockReturnValue([{toString: () => '', toJSON: () => ({})}]),
+  findOneStateByKey: jest.fn().mockReturnValue(''),
+  findOneStateByBusinessId: jest.fn().mockReturnValue(''),
+  updateOneState: jest.fn().mockReturnValue(''),
+  updateMultiState: jest.fn().mockReturnValue(''),
+  updateStateFields: jest.fn().mockReturnValue(''),
+  deleteStateByChainKey: jest.fn().mockReturnValue(''),
+  deleteStatesByChainKeys: jest.fn().mockReturnValue(''),
+  listStateByChainKey: jest.fn().mockReturnValue({items: [], count: 0, metadata: {bookmark: ''}}),
+  listStateByQuery: jest.fn().mockReturnValue({items: [], count: 0, metadata: {bookmark: ''}}),
+}));

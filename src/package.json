@@ -1,0 +1,21 @@
+{
+  "name": "ebaas-universal-chaincode",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "repository": "NONE",
+  "author": "NONE",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=prod fabric-chaincode-node start"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^1.4.4",
+    "fabric-shim": "^1.4.4",
+    "@ampretia/x509": "^0.4.7"
+  },
+  "engines": {
+    "node": "^8.9.0"
+  }
+}

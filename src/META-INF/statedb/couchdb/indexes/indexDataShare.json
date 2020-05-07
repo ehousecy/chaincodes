@@ -1,0 +1,12 @@
+{
+  "index": {
+    "fields": [
+      "dataType",
+      "status",
+      "targetKey"
+    ]
+  },
+  "ddoc": "indexDataShareDoc",
+  "name": "indexDataShare",
+  "type": "json"
+}
